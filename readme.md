@@ -1,6 +1,6 @@
 # Advent of Code
 
-These are my solutions for [Advent of Code 2018](https://adventofcode.com/2018). I used these programming problems as a way to practice and improve upon my C++. Previously, I had mostly used C instead of C++, aside from doing some sensor library and server code. My main higher level languages were Python and MATLAB (I have a background in MechE), and I wanted to work on something that was strongly typed and more suited to performance. I thought it would also be a good segue into doing more graphics, audio, and robotics programming, which I am generally interested in.  
+These are my solutions for [Advent of Code 2018](https://adventofcode.com/2018). I used these programming problems as a way to practice and improve upon my C++. Previously, I had mostly used C instead of C++, aside from doing some sensor library and server code. My main higher level languages were Python and MATLAB (I have a background in MechE), and I wanted to work on something that was strongly typed and more suited to high performance applications, since I have strong interests in continuing programming on audio, graphics, and robotics.  
 
 # What's next?
 
