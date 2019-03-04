@@ -2,7 +2,7 @@
 #include <fstream>
 #include <map>
 #include <vector>
-
+#include <string> 
 int problemOne(std::ifstream* inputFile)
 {
     int sum2 = 0;
@@ -84,7 +84,8 @@ void printAnswer(int answer)
 int main(int argc, char const *argv[])
 {
     std::ifstream inputFile;
-    inputFile.open(argv[1]);
+    std::string filename = "inputs/Day02/sellersgrant.txt";
+    inputFile.open(filename);
 
     if (inputFile.is_open())
     {    
@@ -97,7 +98,7 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        std::cout << "File not able to be opened." << std::endl;
+        std::cout << "Unable to open file: " << filename;
         return -1;
     }
     inputFile.close();
