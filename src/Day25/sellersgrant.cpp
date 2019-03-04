@@ -79,6 +79,5 @@ int main(int argc, char const *argv[])
 
     std::cout << "Part 1: " << run("input.txt");
     
-    std::cin.get();
     return 0;
 }

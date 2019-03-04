@@ -12,12 +12,6 @@ void dropSideways(std::vector<std::string> &, int, int, int);
 void drop(std::vector<std::string> & board, int, int);
 void fill(std::vector<std::string> &, int, int);
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit. " << std::endl;
-    std::cin.get();
-}
-
 void print(std::vector<std::string> board)
 {
     for (std::string line : board)
@@ -89,7 +83,6 @@ int runP1(std::string filename)
 int main(int argc, char const *argv[])
 {
     std::cout  << runP1("input.txt");
-    keepWindowOpen();
     return 0;
 }
 

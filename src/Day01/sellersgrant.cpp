@@ -69,13 +69,9 @@ void printAnswer(int answer)
 
 int main(int argc, char const *argv[])
 {
-    if (argc != 2)
-    {
-        return -1;
-    }
-
+    std::string filename = "inputs/Day01/sellersgrant.txt";
     std::ifstream inputFile;
-    inputFile.open(argv[1]);
+    inputFile.open(filename);
     if (inputFile.is_open())
     {
         printAnswer(problemOne(&inputFile));
@@ -87,7 +83,7 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        std::cout << "Unable to open file." << argv[1];
+        std::cout << "Unable to open file: " << filename;
         return -1;
     }
 

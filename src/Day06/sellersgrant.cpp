@@ -21,13 +21,6 @@ int manhattanDistance(Point p1, Point p2)
     return std::abs(p2.x-p1.x) + abs(p2.y-p1.y);
 }
 
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin >> x;
-}
-
 std::vector<Point> parseInput(std::string filename)
 {
     std::vector<Point> points;
@@ -183,8 +176,6 @@ int main(int argc, char const *argv[])
     board[BOUNDS][BOUNDS] = {0};
     std::cout << "P2 Answer: " << problemTwo(points,board) << std::endl;
     // print(board);
-
-    keepWindowOpen();
 
     return 0;
 }

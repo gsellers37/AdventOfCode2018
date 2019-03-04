@@ -271,6 +271,5 @@ int main(int argc, char const *argv[])
     std::cout << "Part 1: " << run(immuneSystem,infection,immuneWins) << std::endl;
     std::cout << "Part 2: " << boost(immuneSystem,infection) << std::endl;
     
-    std::cin.get();
     return 0;
 }

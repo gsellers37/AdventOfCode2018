@@ -6,12 +6,6 @@
 typedef std::vector<std::pair<int,int>> Places;
 typedef std::pair<int,int> Place;
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit. " << std::endl;
-    std::cin.get();
-}
-
 void print(std::vector<std::string> board)
 {
     for (std::string line : board)
@@ -193,6 +187,5 @@ int runP1(std::string filename)
 int main(int argc, char const *argv[])
 {
     std::cout << runP1("input.txt") << std::endl;
-    keepWindowOpen();
     return 0;
 }

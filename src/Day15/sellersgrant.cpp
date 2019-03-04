@@ -10,11 +10,7 @@
 #define DOWN  (Point(0,1))
 
 #define NULLPOINT (Point(INT16_MAX,INT16_MAX))
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit" << std::endl;
-    std::cin.get();
-}
+
 class Point
 {
     public:
@@ -625,7 +621,5 @@ int main(int argc, char const *argv[])
         
     printf("P2 input scored %d\n", runP2("input.txt"));
 
-    
-    keepWindowOpen();
     return 0;
 }

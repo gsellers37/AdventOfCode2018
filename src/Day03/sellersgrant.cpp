@@ -182,12 +182,6 @@ void printAnswer(int answer)
     std::cout << "Sum = " << answer << std::endl;
 }
 
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin >> x;
-}
 
 int main(int argc, char const *argv[])
 {
@@ -212,6 +206,5 @@ int main(int argc, char const *argv[])
     }
 
     inputFile.close();
-    keepWindowOpen();
     return 0;
 }

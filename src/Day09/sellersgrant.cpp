@@ -2,35 +2,28 @@
 #include <fstream>
 #include <vector>
 #include <list>
-int keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin >> x;
-}
 
 void print(std::list<int> circle)
 {
     for (std::list<int>::iterator it = circle.begin(); it != circle.end(); it++)
-    {
         std::cout << *it << " ";
-    }
+        
     std::cout << std::endl << std::endl;
 }
 
-u_int64_t problemOne(std::string line)
+uint64_t problemOne(std::string line)
 {
     int numPlayers, lastMarble;
     sscanf(line.c_str(), "%d players; last marble is worth %d points", &numPlayers, &lastMarble);
     
     std::list<int> circle = {0};
 
-    u_int64_t score = 0;
+    uint64_t score = 0;
     int marble = 1;
     std::list<int>::iterator position = circle.begin();
 
-    std::list<u_int64_t> players(numPlayers);
-    std::list<u_int64_t>::iterator player = players.begin();
+    std::list<uint64_t> players(numPlayers);
+    std::list<uint64_t>::iterator player = players.begin();
 
     while (marble <= lastMarble)
     {
@@ -77,10 +70,12 @@ u_int64_t problemOne(std::string line)
 
     return highScore;
 }
+
 int main(int argc, char const *argv[])
 {
     std::ifstream inputFile;
-    inputFile.open(argv[1]);
+    std::string filename = "../inputs/Day09/sellersgrant.txt";
+    inputFile.open(filename);
     if (inputFile.is_open())
     {
         std::string line;
@@ -91,10 +86,9 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        std::cout << "Unable to open file: " << argv[1];
+        std::cout << "Unable to open file: " << filename;
         return -1;
     }
 
-    keepWindowOpen();
     return 0;
 }

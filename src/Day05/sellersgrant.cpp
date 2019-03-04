@@ -2,13 +2,6 @@
 #include <fstream>
 #include <vector>
 
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit" << std::endl;
-    std::cin >> x;
-}
-
 void print(std::string polymer)
 {
     for (std::string::iterator it = polymer.begin(); it != polymer.end(); it++)
@@ -58,6 +51,5 @@ int main(int argc, char const *argv[])
     {
         std::cout << "Answer part 2" << culprit << ": " << getPolymerSansElement(culprit,argv[1]) << std::endl;
     }
-    keepWindowOpen();
     return 0;
 }

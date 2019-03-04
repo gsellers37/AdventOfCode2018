@@ -10,12 +10,6 @@
 // typedef std::pair<std::string,Registers> Instruction; 
 typedef std::map<std::string,bool (*)(std::vector<int> &, int, int, int )> StrToFunc;
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit" << std::endl;
-    std::cin.get();
-
-}
 void parseData(std::string filename, int * ip, std::vector<std::pair<std::string,std::vector<int>>> * instructions)
 {
     std::ifstream inputFile;
@@ -60,7 +54,7 @@ int runP1(std::string filename, const StrToFunc opcodeMap)
     if (ip == -1)
         return 0;
     
-    // print(instructions);
+    print(instructions);
     
 }
 
@@ -68,7 +62,7 @@ int main(int argc, char const *argv[])
 {    
     StrToFunc opcodeMap;
     // opcodeMap;
-    std::cout << runP1("input.txt",opcodeMap) << std::endl;
-    keepWindowOpen();
+    std::cout << runP1("../inputs/Day01/sellersgrant",opcodeMap) << std::endl;
+
     return 0;
 }

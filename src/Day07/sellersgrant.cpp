@@ -8,13 +8,6 @@
 #define OFFSET 61
 #define WORKERS 5
 
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit. ";
-    std::cin >> x;
-}
-
 int convertChar(char a)
 {
     return (int)(a) - 65;
@@ -307,10 +300,7 @@ int main(int argc, char const *argv[])
 
     std::cout << graph.getProblemOne() << std::endl;
 
-    
     std::cout << graph.getProblemTwo() << std::endl;
 
-
-    keepWindowOpen();
     return 0;
 }

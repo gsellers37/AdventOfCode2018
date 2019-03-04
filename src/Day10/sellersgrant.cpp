@@ -5,11 +5,6 @@
 #include <algorithm>
 #define HEIGHT 9 // Fiddle with this until the message appears. 8 for test.txt, 9 for input.txt
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin.get();
-}
 
 class Point
 {
@@ -97,7 +92,5 @@ int main(int argc, char const *argv[])
         returnValue = -1;
     }
 
-
-    keepWindowOpen();
     return returnValue;
 }

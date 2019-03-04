@@ -17,14 +17,6 @@ point_t S(const point_t point){   return point_t(point.first,point.second+1);   
 point_t E(const point_t point){   return point_t(point.first+1,point.second);   }
 point_t W(const point_t point){   return point_t(point.first-1,point.second);   }
 
-
-
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit";
-    std::cin.get();
-}
-
 void connect(graph_t & graph, point_t & point1, const point_t point2)
 {
     graph[point1].push_back(point2);
@@ -136,6 +128,5 @@ int main(int argc, char const *argv[])
     runTestP1("test7.txt",4);
     runTestP1("test8.txt",2);
     std::cout << runP1("input.txt") << std::endl; //138 too low
-    keepWindowOpen(); 
     return 0;
 }

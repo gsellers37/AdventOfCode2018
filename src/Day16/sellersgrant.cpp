@@ -7,12 +7,6 @@
 // Includes the instruction set's functions
 #include "operations.h"
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit: "<<std::endl;
-    std::cin.get();   
-}
-
 class Opcode
 {
     bool (*func)(std::vector<int> & registers, int A, int B, int C);
@@ -221,8 +215,8 @@ int runP2(std::string filename)
 int main(int argc, char const *argv[])
 {
     std::cout << "P1 Answer: " << runP1("input.txt") << std::endl;
-    std::cout << "P2 Answer: " << runP2("input.txt") << std::endl; 
-    keepWindowOpen();
+    std::cout << "P2 Answer: " << runP2("input.txt") << std::endl;
+    
     return 0;
 }
 

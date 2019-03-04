@@ -2,12 +2,6 @@
 #include <algorithm>
 #define BOUND 300
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin.get();
-}
-
 int getHundredsDigit(int powerLevel)
 {
     std::string toString = std::to_string(powerLevel);
@@ -102,6 +96,5 @@ int main(int argc, char const *argv[])
     }
     std::cout << "Kernel size: " << bestKernel << std::endl;
     run(7989, bestKernel, true);
-    keepWindowOpen();
     return 0;
 }

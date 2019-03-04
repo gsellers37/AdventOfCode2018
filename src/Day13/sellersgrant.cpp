@@ -9,12 +9,6 @@
 #define DOWN (std::pair<int,int>(0,1))
 #define NULLPAIR (std::pair<int,int>(-1,-1))
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit" << std::endl;
-    std::cin.get();
-}
-
 std::vector<std::string> readFile(std::string filename)
 {
     std::ifstream inputFile;
@@ -338,6 +332,5 @@ int main(int argc, char const *argv[])
         std::cout << "P2 X: " << output.first << " Y: " << output.second << std::endl;
     }
 
-    keepWindowOpen();
     return 0;
 }

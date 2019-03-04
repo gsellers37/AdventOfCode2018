@@ -3,14 +3,6 @@
 #include <stack>
 #include <vector>
 
-
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit. ";
-    std::cin >> x;
-}
-
 class Header 
 {
     int numChildren, numMetadata;
@@ -106,6 +98,5 @@ int main(int argc, char const *argv[])
         std::cout << "Unable to open file: " << argv[1] << std::endl;
         return -1;
     }
-    keepWindowOpen();
     return 0;
 }

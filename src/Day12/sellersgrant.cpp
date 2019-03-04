@@ -5,11 +5,6 @@
 #define GENERATIONS_P1 20
 #define GENERATIONS_P2 50000000000
 #define DEPTH 5
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin.get();
-}
 
 class Rules
 {
@@ -178,6 +173,5 @@ int main(int argc, char const *argv[])
         std::cout << "Unable to open file: " << argv[1];
     }
 
-    keepWindowOpen();
     return 0;
 }

@@ -135,6 +135,5 @@ int main(int argc, char const *argv[])
         }
     }
 
-    std::cin.get();
     return 0;
 }

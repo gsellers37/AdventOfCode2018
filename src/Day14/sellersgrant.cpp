@@ -4,11 +4,6 @@
 #include <list>
 #include <queue>
 
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit: " << std::endl;
-    std::cin.get();
-}
 
 void print(std::list<int> recipes)
 {
@@ -213,6 +208,5 @@ int main(int argc, char const *argv[])
     problemOne("testP1.txt",702831);   
     problemTwo("testP2.txt","702831");
     //131757233
-    keepWindowOpen();
     return 0;
 }

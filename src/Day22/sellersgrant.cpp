@@ -44,8 +44,6 @@ int main(int argc, char const *argv[]) {
     target = std::make_pair(x,y);
     
     // Part One
-
-    int coordMax = std::max(target.first,target.second);
     for (x = 0; x < MAXN; x++) {
         for (y = 0; y < MAXN; y++) {
 
@@ -120,6 +118,5 @@ int main(int argc, char const *argv[]) {
     printf("Part 2: %d\n", dijk[target.first][target.second][1]);
 
 
-    std::cin.get();
     return 0;
 }

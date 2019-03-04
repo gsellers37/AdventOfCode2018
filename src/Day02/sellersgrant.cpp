@@ -76,14 +76,6 @@ int problemTwo(std::ifstream* inputFile)
     }
 }
 
-
-void keepWindowOpen()
-{
-    std::cout << "Press any key to exit." << std::endl;
-    int x;
-    std::cin >> x;
-}
-
 void printAnswer(int answer)
 {
     std::cout << "Answer: " << answer << std::endl;
@@ -110,6 +102,5 @@ int main(int argc, char const *argv[])
     }
     inputFile.close();
 
-    keepWindowOpen();
     return 0;
 }

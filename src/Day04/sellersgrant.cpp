@@ -9,13 +9,6 @@
 #define SLEEP 1
 #define WAKE -1
 #define NULLVALUE -99
-void keepWindowOpen()
-{
-    int x;
-    std::cout << "Press any key to exit." << std::endl;
-    std::cin >> x;
-}
-
 
 class Entry{
     public:
@@ -109,7 +102,6 @@ std::vector<Entry> parseFile(std::string filename)
     else
     {
         std::cout << "Could not open file: " << filename << std::endl;
-        keepWindowOpen();
     }
     return entries;
 }
@@ -252,7 +244,6 @@ int main(int argc, char const *argv[])
     {
         std::cout << i << ": Guard #" << maxCol.first.hours[i] << " at min: " << maxCol.second.hours[i] << std::endl;
     }
-    keepWindowOpen();
 
     return 0;
 }
